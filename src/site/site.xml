@@ -35,6 +35,7 @@
     <menu name="Overview">
       <item name="Introduction" href="index.html" />
       <item name="JavaDocs" href="apidocs/index.html" />
+      <item name="Source Xref" href="xref/index.html"/>
     </menu>
     <menu ref="reports" />
   </body>
