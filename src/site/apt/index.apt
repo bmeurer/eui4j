@@ -1,0 +1,33 @@
+    -------------------------------------------------
+    Extended Unique Identifier (EUI) classes for Java
+    -------------------------------------------------
+    Benedikt Meurer
+    -------------------------------------------------
+    2012-10-10
+    -------------------------------------------------
+
+Introduction
+
+  The aim of this project is to provide Java developers with an implementation
+of the most commonly used extended unique identifiers defined by the IEEE:
+EUI-48 and EUI-64. The EUI-48 is usually referred to as MAC-48 or simply as
+<MAC address>.
+
+Usage
+
+  To use the EUI classes within your Maven-based project, add the following
+to the <<<pom.xml>>> file
+
++--------------------------------------------+
+<dependencies>
+  ...
+  <dependency>
+    <groupId>de.benediktmeurer.eui4j</groupId>
+    <artifactId>eui4j-core</artifactId>
+    <version>0.0.1</version>
+  </dependency>
+  ...
+</dependencies>
++--------------------------------------------+
+
+  and replace <<<0.0.1>>> with the desired version.
