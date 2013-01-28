@@ -26,7 +26,7 @@
 
     <groupId>de.benediktmeurer.eui4j</groupId>
     <artifactId>eui4j-core</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>eui4j-core</name>
