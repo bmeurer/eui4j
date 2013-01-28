@@ -34,7 +34,8 @@ public class EUI48Test {
         return new Object[][] {
                 { 0, (short) 0 },
                 { -1, (short) -1 },
-                { 0x11223344, (short) 0x5566 }
+                { 0x11223344, (short) 0x5566 },
+                { 0x3451c953, (short) 0xb557 }
         };
     }
 
@@ -44,7 +45,8 @@ public class EUI48Test {
                 { 0, (short) 0, "00:00:00:00:00:00" },
                 { -1, (short) -1, "ff:ff:ff:ff:ff:ff" },
                 { 0x0f0f0f0f, (short) 0x0f0f, "0f:0f:0f:0f:0f:0f" },
-                { 0x11223344, (short) 0x5566, "11:22:33:44:55:66" }
+                { 0x11223344, (short) 0x5566, "11:22:33:44:55:66" },
+                { 0x3451c953, (short) 0xb557, "34:51:c9:53:b5:57" }
         };
     }
 
@@ -61,7 +63,8 @@ public class EUI48Test {
     public Object[][] dataProviderBitsAndAlternateNames() {
         return new Object[][] {
                 { 0x987654, (short) 0x3210, "00-98-76-54-32-10" },
-                { -1, (short) -1, "ff-FF-ff-FF-ff-FF" }
+                { -1, (short) -1, "ff-FF-ff-FF-ff-FF" },
+                { 0x3451c953, (short) 0xb557, "34-51-C9-53-B5-57" }
         };
     }
 

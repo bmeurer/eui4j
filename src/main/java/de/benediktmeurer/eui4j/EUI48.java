@@ -117,6 +117,7 @@ public final class EUI48 implements Comparable<EUI48>, Serializable {
      *         greater than {@code val}.
      * @throws NullPointerException if {@code val} is {@code null}.
      */
+    @Override
     public int compareTo(EUI48 val) {
         if (this.mostSignificantBits < val.mostSignificantBits) {
             return -1;
@@ -227,7 +228,7 @@ public final class EUI48 implements Comparable<EUI48>, Serializable {
     @Override
     public String toString() {
         char[] value = new char[17];
-        long bits = ((long) this.mostSignificantBits << 16) | this.leastSignificantBits;
+        long bits = ((long) this.mostSignificantBits << 16) | ((long) this.leastSignificantBits & 0xffff);
         for (int n = value.length; --n >= 0;) {
             if ((n - 2) % 3 == 0) {
                 value[n] = ':';
